@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "404228325476",
+    "firebase_url": "https://crossword-ddd3a.firebaseio.com",
+    "project_id": "crossword-ddd3a",
+    "storage_bucket": "crossword-ddd3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404228325476:android:b911b22b54814566",
+        "android_client_info": {
+          "package_name": "com.example.crossword"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404228325476-rdot4aa3re2hp6cu4ua7ket9n80ra7nm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crossword",
+            "certificate_hash": "401859230e6ab740a3e6bd20ecb1a3a9c8c02b1b"
+          }
+        },
+        {
+          "client_id": "404228325476-6i6n6eh6q44fnvr8hu0entq3qlbg6p36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFnS9VqikFr1fofutQG7lDBaEDsyMonLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404228325476-6i6n6eh6q44fnvr8hu0entq3qlbg6p36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

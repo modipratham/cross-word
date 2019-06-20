@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srl"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/summaryLayout">
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Following are the correct answers:"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/summaryList"
+                android:layout_below="@+id/tvHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignStart="@+id/cvEasy"
+                    android:layout_alignLeft="@+id/cvEasy"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="600dp"
+                    android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gameLayout">
+
+            <RelativeLayout
+                android:id="@+id/relLayHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorAccent"
+                        />
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/pbTimer"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cpb_background_progressbar_color="#FFCDD2"
+                        app:cpb_background_progressbar_width="5dp"
+                        app:cpb_progressbar_color="#F44336"
+                        app:cpb_progressbar_width="10dp"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/TextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/programmingList"
+                android:layout_below="@+id/relLayHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
