@@ -360,6 +360,5 @@ public class MainActivity extends AppCompatActivity {
             return isScrollEnabled && super.canScrollHorizontally();
         }
     }
-
 }
 
